@@ -61,6 +61,10 @@ class Game{
                         textSize(23);
                         textFont("Tahoma");
                         text(allPlayers[plr].name,x-52,y+25);
+                         textSize(25);
+                         fill("white");
+                         text(allPlayers.player1.name + "'s Score:"+allPlayers.player1.score,50,50);
+                        text(allPlayers.player2.name + "'s Score:" + allPlayers.player2.score, 50, 100);
                     }
                     
                     
