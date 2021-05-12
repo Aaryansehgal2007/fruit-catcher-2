@@ -61,7 +61,7 @@ class Game{
                         textSize(23);
                         textFont("Tahoma");
                         text(allPlayers[plr].name,x-52,y+25);
-                         textSize(25);
+                        textSize(25);
                          fill("white");
                          text(allPlayers.player1.name + "'s Score:"+allPlayers.player1.score,50,50);
                         text(allPlayers.player2.name + "'s Score:" + allPlayers.player2.score, 50, 100);
@@ -72,21 +72,18 @@ class Game{
                  if (keyIsDown(RIGHT_ARROW) && player.index !== null) {
                     player.distance -= 10
                     player.update();
-                    
                     textSize(25);
-                    fill("white");
-                    text(allPlayers.player1.name + "'s Score:"+allPlayers.player1.score,50,50);
-                   text(allPlayers.player2.name + "'s Score:" + allPlayers.player2.score, 50, 100);
+                         fill("white");
+                         text(allPlayers.player1.name + "'s Score:"+allPlayers.player1.score,50,50);
+                        text(allPlayers.player2.name + "'s Score:" + allPlayers.player2.score, 50, 100);
                 }
                 if (keyIsDown(LEFT_ARROW) && player.index !== null) {
                     player.distance += 10
                     player.update();
-
-                    
                     textSize(25);
-                    fill("white");
-                    text(allPlayers.player1.name + "'s Score:"+allPlayers.player1.score,50,50);
-                   text(allPlayers.player2.name + "'s Score:" + allPlayers.player2.score, 50, 100);
+                         fill("white");
+                         text(allPlayers.player1.name + "'s Score:"+allPlayers.player1.score,50,50);
+                        text(allPlayers.player2.name + "'s Score:" + allPlayers.player2.score, 50, 100);
                 }
             
                  if (frameCount % 20 === 0) {
@@ -104,7 +101,6 @@ class Game{
                          break;
                          case 5: fruits.addImage("fruit1", fruit5_img);
                          break;
-                         
                          textSize(25);
                          fill("white");
                          text(allPlayers.player1.name + "'s Score:"+allPlayers.player1.score,50,50);
@@ -120,6 +116,10 @@ class Game{
                             fruitGroup.get(i).destroy();
                             player.score =player.score+1;
                             player.update();
+                            textSize(25);
+                         fill("white");
+                         text(allPlayers.player1.name + "'s Score:"+allPlayers.player1.score,50,50);
+                        text(allPlayers.player2.name + "'s Score:" + allPlayers.player2.score, 50, 100);
                         }
                         
                     }
